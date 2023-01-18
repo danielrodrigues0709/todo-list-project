@@ -1,10 +1,12 @@
 <div *ngFor="let item of todoList">
     <div class="item">
-        <button class="btn" (click)="removeTask(item)">x</button>
+        <button class="btn" (click)="removeTask(item)"
+        (mouseover)="hint = 'Clique no botão para excluir a tarefa'"
+        (mouseout)="hint = ' '">x</button>
         <strong
             class="label"
             (click)="onSelectTask(item)"
-            (mouseover)="hint = 'Clique no botão para excluir ou na tarefa para editar'"
+            (mouseover)="hint = 'Clique na tarefa para editá-la'"
             (mouseout)="hint = ' '">
             {{item.task}}</strong>
     </div>
