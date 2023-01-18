@@ -1,5 +1,7 @@
 <div *ngFor="let item of todoList">
-    <button (click)="removeTask(item)">x</button>
-    {{item.task}}
+    <div class="item">
+        <button class="btn" (click)="removeTask(item)">x</button>
+        <strong>{{item.task}}</strong>
+    </div>
 </div>
   
