@@ -8,6 +8,8 @@ export class TodoListService {
 
   taskObj!: Task;
   id: number = 0;
+  taskSelected = new EventEmitter();
+  taskUpdated = new EventEmitter();
 
   constructor() { }
 
@@ -28,5 +30,13 @@ export class TodoListService {
   public removeTask(task: Task): void {
     let newList = this.todoList.filter(tk => tk.id !== task.id);
     this.todoList = newList;
+  }
+
+  public upDateTask(taskId: number, description: string): void {
+    this.todoList.forEach((tk, i) => {
+      if(tk.id == taskId) {
+        this.todoList[i].task = description;
+      }
+    })
   }
 }

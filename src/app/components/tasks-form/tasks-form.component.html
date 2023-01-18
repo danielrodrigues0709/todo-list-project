@@ -1,2 +1,2 @@
-<input #task type="text" class="input" placeholder="Digite aqui sua tarefa">
-<button class="btn" type="button" (click)="addTask(task); task.value = ''">Adicionar tarefa</button>
+<input #task type="text" class="input" placeholder="Digite aqui sua tarefa" [(value)]="input.value">
+<button class="btn" type="button" (click)="addTask(task); task.value = ''">{{btnLabel}}</button>
