@@ -7,4 +7,8 @@
     padding: 5px;
     background-color: chocolate;
     color: white;
+
+    &:hover {
+        cursor: pointer;
+    }
 }

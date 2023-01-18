@@ -3,6 +3,10 @@
     background-color: red;
     color: white;
     margin: 5px 20px;
+
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .label:hover {
