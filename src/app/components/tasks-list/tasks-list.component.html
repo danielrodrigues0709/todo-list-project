@@ -1,1 +1,5 @@
-<p>tasks-list works!</p>
+<div *ngFor="let item of todoList">
+    <button (click)="removeTask(item)">x</button>
+    {{item.task}}
+</div>
+  

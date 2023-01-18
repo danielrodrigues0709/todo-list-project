@@ -3,8 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TasksListComponent } from './tasks-list/tasks-list.component';
-import { TasksFormComponent } from './tasks-form/tasks-form.component';
+import { TasksListComponent } from './components/tasks-list/tasks-list.component';
+import { TasksFormComponent } from './components/tasks-form/tasks-form.component';
 
 @NgModule({
   declarations: [
