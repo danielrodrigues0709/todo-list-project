@@ -4,3 +4,15 @@
     color: white;
     margin: 5px 20px;
 }
+
+.label:hover {
+    cursor: pointer;
+}
+
+.hint {
+    position: fixed;
+    top: 150px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
